@@ -3,7 +3,7 @@ name: Automated tests
 on:
   workflow_dispatch:
     inputs:
-      deployment_target:
+      logLevel:
         description: Choose target
         required: true
         default:
