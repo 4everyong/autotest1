@@ -13,3 +13,7 @@ def browser():
 def test_button_display(browser):
     browser.get('https://www.qa-practice.com/elements/button/simple')
     assert browser.find_element(By.ID, 'submit-id-submit').is_displayed()
+
+def test_button_display1(browser):
+    browser.get('https://www.qa-practice.com/elements/button/like_a_button')
+    assert browser.find_element(By.CLASS_NAME, 'a-button').is_displayed()
